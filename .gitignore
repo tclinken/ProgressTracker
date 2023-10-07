@@ -1,0 +1,4 @@
+.todoist_api_token
+/data/
+.mypy_cache/
+__pycache__/

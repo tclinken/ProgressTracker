@@ -1,0 +1,18 @@
+#!/bin/bash
+
+PROJECT_DIR=$HOME/TodoistProject
+DB_LOCATION=$PROJECT_DIR/data/todoist.db
+
+source $PROJECT_DIR/.todoist_api_token
+
+todoistSync() {
+  python3 $PROJECT_DIR/src/data_driver.py --db-file $DB_LOCATION --action sync
+}
+
+todoistInit() {
+  python3 $PROJECT_DIR/src/data_driver.py --db-file $DB_LOCATION --action init
+}
+
+todoistDisplay() {
+  streamlit run -- $PROJECT_DIR/src/display.py --db-file $DB_LOCATION
+}
