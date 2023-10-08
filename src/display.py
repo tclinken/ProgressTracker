@@ -11,6 +11,11 @@ def display(db_file: str):
         y="num_items",
         color="project_name",
     )
+    fig.update_layout(
+        xaxis_title="Week",
+        yaxis_title="Tasks Completed",
+        legend_title="Project"
+    )
     st.plotly_chart(fig, use_container_width=True)
 
 def main():
