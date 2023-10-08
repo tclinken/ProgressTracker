@@ -15,3 +15,8 @@ pip3 install streamlit duckdb plotly
 - Run `todoistInit && todoistSync` to initialize your database.
 - Run `todoistDisplay` to see a visualization of your Todoist statistics.
 - Whenever necessary, run `todoistSync` again to sync recently completed tasks.
+
+## Display
+Ouput looks like the below image (fake project names have been provided in this example):
+
+![project_tracker_screen_shot](project_tracker.png)
