@@ -1,5 +1,5 @@
 # ProgressTracker
-Local Streamlit app for Todoist progress visualization
+Local app for Todoist progress visualization, using Streamlit, DuckDB, and Plotly.
 
 ## Setup
 Note: (Currently this app is only for personal use, so I haven't made easy-to-use setup steps). The rough setup steps are outlined below:
